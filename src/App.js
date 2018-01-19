@@ -18,35 +18,26 @@ import Food from './Food';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="container">
         <Router>
           <div>
-            <div className="navbar">
-              <ul>
-                <li>
-                  <Link to="/">Home</Link>
-                </li>
-                <li>
-                  <Link to="/blog">Blog</Link>
-                </li>
-                <li>
-                  <Link to="/movie">Movie</Link>
-                </li>
-                <li>
-                  <Link to="/food">Food</Link>
-                </li>
-                <li>
-                  <Link to="/about">About</Link>
-                </li>
+            <nav className="">
+              <ul className="nav navbar-nav">
+                <li class="nav-item"><Link to="/">Home</Link></li>
+                <li><Link to="/blog">Blog</Link></li>
+                <li><Link to="/movie">Movie</Link></li>
+                <li><Link to="/food">Food</Link></li>
+                <li><Link to="/about">About</Link></li>
               </ul>
-
-
+            </nav>
+            <div>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/blog" component={Blog} />
+              <Route exact path="/movie" component={Movie} />
+              <Route exact path="/food" component={Food} />
+              <Route exact path="/about" component={About} />
             </div>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/blog" component={Blog} />
-            <Route exact path="/movie" component={Movie} />
-            <Route exact path="/food" component={Food} />
-            <Route exact path="/about" component={About} />
+
           </div>
         </Router>
 
