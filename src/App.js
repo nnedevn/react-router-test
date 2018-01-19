@@ -20,7 +20,7 @@ class App extends Component {
     return (
       <Router>
         <div className="container">
-        <header><nav className="nav justify-content-center">
+          <header><nav className="nav justify-content-center">
             <Link className="nav-link" to="/">Home</Link>
             <Link className="nav-link" to="/blog">Blog</Link>
             <Link className="nav-link" to="/movie">Movie</Link>
@@ -28,8 +28,8 @@ class App extends Component {
             <Link className="nav-link" to="/about">About</Link>
           </nav>
           </header>
-          
-          <div>
+
+          <div className="text-center">
             <Route exact path="/" component={Home} />
             <Route exact path="/blog" component={Blog} />
             <Route exact path="/movie" component={Movie} />
