@@ -1,9 +1,12 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
-class About extends Component{
-  render(){
-    return(
-      <h1>This is the About page</h1>
+class About extends Component {
+  render() {
+    return (
+      <div>
+        <h1>About me</h1>
+        <p>I was born at a very early age.</p>
+      </div>
     )
   }
 }
